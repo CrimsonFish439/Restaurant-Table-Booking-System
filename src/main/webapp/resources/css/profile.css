@@ -1,0 +1,26 @@
+/* profile.css */
+body {
+    background-color: #f4f7fa;
+}
+
+.card {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+label {
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+    background-color: #E23744;
+    border-color: #E23744;
+    color: white;
+}

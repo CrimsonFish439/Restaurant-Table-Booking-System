@@ -1,0 +1,196 @@
+/* General Reset and Body */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+rgba(226, 55, 68, 1) 0%,  /* Keeping the first color the same */
+    rgba(200, 120, 80, 1) 90%  ); /* Zomato's color palette */
+}
+
+/* Custom Navbar */
+.my-navbar {
+  background-color: transparent !important;
+  box-shadow: none; /* Remove any shadows */
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+
+.my-navbar-brand {
+  /* font-size: 20px !important; */
+  font-weight: bold;
+  color: #ffffff; /* White text color */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 2.5rem;
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.my-navbar-brand:hover {
+   color: #E23744; /* Zomato red color on hover */
+}
+
+.my-navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.my-nav-link {
+  font-size: 16px;
+  color: #ffffff !important; /* White text color */
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.my-nav-link:hover {
+  color: #E23744 !important; /* Zomato red on hover */
+}
+
+/* Sign-in Card Styling */
+.card {
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  width: 400px;
+  background-color: #ffffff;
+  padding: 30px;
+}
+
+.card_title {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.card_title h1 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #E23744; /* Zomato red */
+}
+
+.card_title span {
+  font-size: 14px;
+  color: #666;
+}
+
+.form input {
+  margin: 10px 0;
+  width: 100%;
+  background-color: #f7f7f7;
+  border: none;
+  outline: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
+}
+
+.form input:focus {
+  border: 2px solid #E23744;
+  background-color: #ffffff;
+}
+
+.form button {
+  background-color: #E23744;
+  color: #ffffff;
+  font-size: 16px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  padding: 12px 20px;
+  width: 100%;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #C82333;
+}
+
+.card a {
+  color: #E23744;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* Password wrapper for position-relative */
+.password-wrapper {
+  position: relative;
+  width: 100%; /* Ensure it takes the full width of the parent container */
+}
+
+.password-wrapper input[type="password"] {
+  width: 100%;
+  padding-right: 40px; /* Provide space for the eye icon */
+}
+
+/* Eye icon inside password field */
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 15px; /* Adjust the distance from the right side of the input */
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #aaa; /* Adjust the color of the eye icon */
+}
+
+.password-toggle:hover {
+  color: #333; /* Darker color on hover */
+}
+
+
+.error-message {
+  font-size: 12px;
+  color: red;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+.back-to-home {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.back-to-home:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+/* Media Query for mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .container {
+    padding: 30px 10px;
+  }
+}

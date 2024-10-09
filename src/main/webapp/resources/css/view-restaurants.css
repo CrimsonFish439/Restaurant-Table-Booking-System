@@ -1,0 +1,151 @@
+/* Import Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+}
+
+.container {
+    margin-top: 50px;
+    max-width: 1200px;
+}
+
+.card {
+    background-color: #f9dcdc; /* Light background color for the card */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+h1 {
+    font-weight: bold;
+    color: #E23744;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.text-muted {
+    color: #666;
+}
+
+/* Table styling */
+.table {
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.table thead {
+    background-color: #E23744;
+    color: white;
+}
+
+.table thead th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(226, 55, 68, 0.1); /* Light hover effect */
+}
+
+.table img {
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.restaurant-image {
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.badge-success {
+    background-color: #28a745;
+}
+
+.badge-danger {
+    background-color: #dc3545;
+}
+
+td, th {
+    vertical-align: middle !important;
+}
+
+/* Icon Styling */
+.text-warning {
+    font-size: 18px;
+}
+
+.text-danger {
+    font-size: 18px;
+}
+
+.text-success {
+    font-size: 18px;
+}
+
+/* Modal Styling */
+.modal-header {
+    background-color: #E23744;
+    color: white;
+    font-size: 14px;
+}
+
+/* Modal image styling */
+.modal-body img {
+    width: 100%; /* Make the image fill the modal width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 400px; /* Set a maximum height to prevent flooding */
+    object-fit: cover; /* Ensure the image is cropped appropriately */
+}
+
+/* Adjust the content overflow if the image is too large */
+.modal-dialog {
+    max-width: 800px; /* Set the maximum width of the modal */
+}
+
+.modal-content {
+    overflow: hidden; /* Prevent overflowing content */
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+
+.modal-body img {
+    border-radius: 5px;
+}
+
+.modal-body h6 {
+    font-weight: 500;
+}
+
+.modal-body p {
+    color: #666;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .table img {
+        width: 80px;
+        height: 50px;
+    }
+
+    .btn {
+        font-size: 12px;
+    }
+}

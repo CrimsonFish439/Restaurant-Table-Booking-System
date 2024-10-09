@@ -1,0 +1,233 @@
+/* General Reset and Body */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 20px;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(226, 55, 68, 1) 0%,
+    rgba(200, 120, 80, 1) 90%
+  );
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  width: 600px;
+  background-color: #ffffff;
+  padding: 30px;
+}
+
+/* Two-column layout for form rows */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between two columns */
+}
+
+.form-group {
+  flex: 1; /* Each form field will take up equal space in the row */
+}
+
+.card_title {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.card_title h1 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #E23744; /* Zomato red */
+}
+
+.card_title span {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Custom Navbar */
+.my-navbar {
+  background-color: transparent !important;
+  box-shadow: none; /* Remove any shadows */
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+
+.my-navbar-brand {
+  /* font-size: 20px !important; */
+  font-weight: bold;
+  color: #ffffff; /* White text color */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 2.5rem;
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.my-navbar-brand:hover {
+   color: #E23744; /* Zomato red color on hover */
+}
+
+.my-navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.my-nav-link {
+  font-size: 16px;
+  color: #ffffff !important; /* White text color */
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.my-nav-link:hover {
+  color: #E23744 !important; /* Zomato red on hover */
+}
+
+
+.form input {
+  margin: 0px 0px 7px 0px;
+  width: 100%; /* Full width inside its column */
+  background-color: #f7f7f7;
+  border: none;
+  outline: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease; /* Smooth transition for border */
+}
+
+.form input:focus {
+  border: 2px solid #E23744; /* Red border when the field is selected */
+  background-color: #ffffff; /* Slight contrast with the background */
+}
+
+/* Password wrapper for position-relative */
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.password-wrapper input[type="password"],
+.password-wrapper input[type="text"] {
+  width: 100%;
+  padding-right: 40px; /* Make space for the eye icon */
+}
+
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #aaa; /* Adjust color of the eye icon */
+}
+
+.password-toggle:hover {
+  color: #333; /* Darker color on hover */
+}
+
+
+/* Proper alignment for show password checkbox */
+.show-password-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align to the left */
+    margin-top: 10px;
+}
+
+.show-password-row input[type="checkbox"] {
+    width: auto; /* Ensure the checkbox doesn’t stretch */
+    margin-top: 5px;
+    margin-right: -5px;
+}
+
+.show-password-row label {
+    margin: 0; /* Reset any margins for the label */
+}
+
+
+/* Terms of Service alignment */
+.card_terms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  margin-top: 15px;
+}
+
+.card_terms input[type="checkbox"] {
+  width: auto;
+  height: auto;
+  margin-right: 8px;
+  transform: scale(1.4);
+}
+
+.form button {
+  background-color: #E23744; /* Zomato red */
+  color: #ffffff;
+  font-size: 16px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  padding: 12px 20px;
+  width: 100%;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #C82333; /* Darker red on hover */
+}
+
+.card a {
+  color: #E23744; /* Zomato red */
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  font-size: 12px;
+  color: red;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+/* Media Query for mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .container {
+    padding: 30px 10px; /* Extra padding for mobile view */
+  }
+
+  .form-row {
+    flex-direction: column; /* Stack fields on smaller screens */
+  }
+}

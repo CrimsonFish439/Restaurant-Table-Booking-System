@@ -1,0 +1,155 @@
+/* General Reset and Body */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Okra, Helvetica, sans-serif;
+    height: 100%; /* Ensure the body fills the viewport */
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef); /* Light gradient background */
+}
+
+h1, h2, h3, h4, h5 {
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Navbar - Transparent on Hero */
+/* Updated Navbar Styles */
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background: transparent; /* Keep navbar transparent */
+    box-shadow: none;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between; /* Ensure brand is on the left and links are on the right */
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff; /* White for hero background */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 20px; /* Adjust margin to align closer to the left edge */
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Ensure the links are aligned towards the right */
+}
+
+.nav-link {
+    font-size: 16px;
+    color: #fff; /* White for links on hero */
+    padding-right: 20px;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #E23744; /* Zomato red */
+}
+
+.nav-link:last-child {
+    padding-right: 0;
+}
+/* Hero Section */
+.hero-section {
+    padding: 100px 0; /* Adjusted padding */
+    position: relative;
+    color: white;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 100vh; /* Full viewport height */
+    background: url('/resources/images/hero_image.jpg') no-repeat center center;
+    background-size: cover;
+    box-shadow: inset 0 0 1000px rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.hero-section h1 {
+    font-size: 58px;
+    font-style: italic;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Text shadow for clarity on background */
+    letter-spacing: 1px;
+}
+
+.hero-section p {
+    font-size: 35px;
+    color: white;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Text shadow for clarity */
+}
+
+/* Buttons for Log In and Sign Up on Hero Section */
+.hero-section .action-buttons {
+    margin-top: 20px;
+}
+
+.hero-section .btn {
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    margin: 10px;
+    color: white;
+    background-color: #E23744;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.hero-section .btn:hover {
+    background-color: #C82333;
+    transform: translateY(-3px); /* Subtle lift effect on hover */
+}
+
+.hero-section .btn:active {
+    transform: translateY(1px); /* Subtle press effect */
+}
+
+/* Footer */
+footer {
+    background-color: #f1f1f1;
+    color: #666;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 36px;
+    }
+
+    .hero-section p {
+        font-size: 18px;
+    }
+
+    .navbar-nav {
+        display: block;
+        text-align: right;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section h1 {
+        font-size: 28px;
+    }
+
+    .hero-section p {
+        font-size: 16px;
+    }
+}

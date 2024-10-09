@@ -1,0 +1,104 @@
+/* General Reset and Body */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f7fa; /* Light background */
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Consistent shadow */
+    padding: 30px;
+    width: 100%; /* Full width to fit the screen */
+    max-width: 800px;
+}
+
+/* Title Styling */
+.card_title h1 {
+    text-align: center;
+    color: #E23744; /* Zomato red */
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Restaurant Option Cards */
+.card i {
+    font-size: 50px;
+    color: #E23744;
+    margin-bottom: 20px;
+}
+
+.card h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Button Styling */
+.btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-outline-danger {
+    color: #E23744; /* Zomato red */
+    border-color: #E23744;
+}
+
+.btn-outline-danger:hover {
+    background-color: #E23744;
+    color: white;
+}
+
+.btn-outline-success {
+    color: #E23744; /* Success green */
+    border-color: #E23744;
+}
+
+.btn-outline-success:hover {
+    background-color: #E23744;
+    color: white;
+}
+
+
+/* Responsive Media Queries */
+@media screen and (max-width: 768px) {
+    .card {
+        padding: 20px;
+    }
+
+    .container {
+        padding: 30px 10px; /* Extra padding for mobile view */
+    }
+
+    .row {
+        flex-direction: column; /* Stack columns vertically on smaller screens */
+    }
+
+    .col-md-6 {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    .card i {
+        font-size: 40px; /* Slightly smaller icons for mobile */
+    }
+}

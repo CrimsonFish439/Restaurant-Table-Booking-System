@@ -1,0 +1,136 @@
+/* Import Poppins Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f4f7fa;
+  color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #E23744; /* Zomato red */
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  font-size: 16px;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ddd; /* Lighter hover effect */
+}
+
+.navbar-dark .navbar-nav .nav-link i {
+  margin-right: 8px;
+}
+
+/* Welcome Section */
+.dashboard-welcome {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.dashboard-welcome h1 {
+  color: #E23744;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.dashboard-welcome p {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Card Styling */
+.dashboard-card {
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+  margin-bottom: 20px;
+}
+
+.card-icon i {
+  color: #E23744; /* Zomato red */
+  font-size: 50px;
+  transition: transform 0.3s ease;
+}
+
+.dashboard-card:hover .card-icon i {
+  transform: scale(1.1);
+}
+
+.dashboard-card h4 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.dashboard-card p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Button Styling */
+.btn {
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-outline-danger {
+    color: #E23744; /* Zomato red */
+    border-color: #E23744;
+}
+
+.btn-outline-danger:hover {
+    background-color: #E23744;
+    color: white;
+}
+
+.btn-outline-success {
+    color: #E23744;
+    border-color: #E23744;
+}
+
+.btn-outline-success:hover {
+    background-color: #E23744;
+    color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .col-md-6 {
+    width: 100%;
+  }
+
+  .dashboard-welcome {
+    margin-bottom: 30px;
+  }
+}

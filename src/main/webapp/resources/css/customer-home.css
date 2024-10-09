@@ -1,0 +1,182 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7fa;
+}
+
+h1 {
+    color: #000000; 
+    font-weight: 700;	
+    margin-top: 20px;
+}
+
+/* Search bar styling */
+.search-form {
+    margin-bottom: 20px;
+    text-align: center; /* Center the search bar */
+}
+
+.search-input {
+    border-radius: 25px 0 0 25px; /* Rounded corners for the input */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for modern effect */
+    transition: all 0.3s ease;
+    width: 70%; /* Adjust width as needed */
+    max-width: 500px;
+    display: inline-block; /* Keep input and button inline */
+    vertical-align: middle;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #28a745; /* Green border on focus */
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.5);
+}
+
+.search-btn {
+    border-radius: 0 25px 25px 0; /* Rounded right corners */
+    padding: 10px 20px;
+    background-color: #e23744; /* Red background for search button */
+    color: white;
+    border: 1px solid #e23744;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Keep input and button inline */
+    vertical-align: middle;
+}
+
+.search-btn:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+/* Add space between search bar and cards */
+.container .row {
+    margin-top: 20px; /* Space between search bar and cards */
+}
+
+/* Overall card styling */
+.card {
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    padding: 10px; /* Adds internal padding */
+    margin-bottom: 20px; /* Adds vertical space between cards */
+    cursor: pointer;
+    background-color: white;
+}
+
+/* Hover effect for the card */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.card-img-top {
+    border-radius: 15px;
+    width: 100%;
+    height: 160px; /* Adjust height for image */
+    object-fit: cover;
+}
+
+/* Title, category, and address section */
+.card-body {
+    padding: 10px 15px; /* Adjust padding for compactness */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Title styling */
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Category styling */
+.card-category {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Address and price section */
+.card-address, .restaurant-price {
+    font-size: 13px;
+    color: #666;
+}
+
+/* Rating badge */
+.restaurant-rating {
+    font-size: 14px;
+    padding: 5px 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Color classes based on rating */
+.restaurant-rating.dark-green-rating {
+    background-color: #1E7D22;
+}
+
+.restaurant-rating.green-rating {
+    background-color: #28a745;
+}
+
+.restaurant-rating.light-green-rating {
+    background-color: #74c476;
+}
+
+.restaurant-rating.yellow-rating {
+    background-color: #f8d66d;
+}
+
+.restaurant-rating.low-rating {
+    background-color: #dc3545;
+}
+
+/* Adds space between cards */
+.card + .card {
+    margin-top: 15px; /* Adds space between the cards */
+}
+
+/* Grid responsiveness */
+.container .row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col-md-4 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Ensure the cards are responsive */
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* .search-input {
+        width: 100%; Full width for mobile
+        border-radius: 25px; Fully rounded on smaller screens
+        margin-bottom: 10px;
+    }
+
+    .search-btn {
+        width: 100%; Full width for button on mobile
+        border-radius: 25px;
+    } */
+
+    .input-group-append {
+        display: block;
+    }
+}
